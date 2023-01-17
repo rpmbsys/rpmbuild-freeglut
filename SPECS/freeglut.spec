@@ -1,4 +1,7 @@
 %global __cmake_in_source_build 1
+%define _debugsource_template %{nil}
+%define debug_package %{nil}
+
 Summary:        A freely licensed alternative to the GLUT library
 Name:           freeglut
 Version:        3.4.0
@@ -248,7 +251,7 @@ install -p -m 644 doc/man/*.3 $RPM_BUILD_ROOT/%{_mandir}/man3
 - Minor specfile cleanups
 - Add a patch from gentoo to stop flightgear from crashing
 
-* Mon Aug 27 2006 Michael J. Knox <michael[AT]knox.net.nz> - 2.4.0-10
+* Sun Aug 27 2006 Michael J. Knox <michael[AT]knox.net.nz> - 2.4.0-10
 - Rebuild for FC6
 
 * Wed Jul 26 2006 Michael J. Knox <michael[AT]knox.net.nz> - 2.4.0-9
@@ -358,6 +361,6 @@ install -p -m 644 doc/man/*.3 $RPM_BUILD_ROOT/%{_mandir}/man3
 * Sat May 31 2003 Mike A. Harris <mharris@www.linux.org.uk> 1.3-0.20020125.1
 - Added -L/usr/X11R6/%%{_lib} configure script invocation and CFLAGS so lib64
   is treated properly on x86_64/ppc64/s390x architectures
-  
+
 * Fri May 30 2003 Mike A. Harris <mharris@www.linux.org.uk> 1.3-0.20020125.0
 - Initial build.
